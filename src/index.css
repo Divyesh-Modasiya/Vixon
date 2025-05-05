@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+.Dimg {
+  background-image: url('../src/assets/HomeImg/black.jpg');
+  position: relative; /* Ensure positioning context for the overlay */
+  background-size: cover; /* Ensure the background image covers the element */
+  background-position: center; /* Center the background image */
+}
+
+/* Dark overlay using ::before pseudo-element */
+.Dimg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black overlay */
+  z-index: 1; /* Ensure the overlay is above the background but below content */
+}
+
+/* Ensure content inside .Dimg is above the overlay */
+.Dimg > * {
+  position: relative;
+  z-index: 2;
+}
