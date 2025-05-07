@@ -1,5 +1,5 @@
-import React from 'react'
-import Header from '../Component/HomeComponent/Header'
+import React, { useEffect } from 'react'
+// import Header from '../Component/HomeComponent/Header'
 import HeroSlide from '../Component/HomeComponent/HeroSlide'
 import AboutUs from '../Component/HomeComponent/AboutUs'
 import LuxuryStoneshowcase from '../Component/HomeComponent/LuxuryStoneshowcase'
@@ -8,12 +8,13 @@ import MarbleProductShowcase from '../Component/HomeComponent/MarbleProductShowc
 import MarbleInstallationShowcase from '../Component/HomeComponent/MarbleInstallationShowcase'
 import MarbleCounterSection from '../Component/HomeComponent/MarbleCounterSection'
 import MarbleTestimonials from '../Component/HomeComponent/MarbleTestimonials'
-import LuxuryFooter from '../Component/HomeComponent/LuxuryFooter'
+// import LuxuryFooter from '../Component/HomeComponent/LuxuryFooter'
 
 function HomePage() {
+
   return (
-    <div>
-      <Header/>
+    <div className='overflow-hidden' >
+      {/* <Header/> */}
       <HeroSlide/>
       <AboutUs/>
       <LuxuryStoneshowcase/>
@@ -22,7 +23,7 @@ function HomePage() {
       <MarbleInstallationShowcase/>
       <MarbleCounterSection/>
       <MarbleTestimonials/>
-      <LuxuryFooter />
+      {/* <LuxuryFooter /> */}
     </div>
   )
 }

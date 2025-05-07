@@ -20,12 +20,6 @@ export default function LuxuryFooter() {
   }, []);
 
   // Scroll to top function
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  };
 
   return (
     <footer className={`Dimg text-white transition-opacity duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
@@ -35,7 +29,7 @@ export default function LuxuryFooter() {
         <div className="flex flex-wrap justify-between">
           {/* Logo and Description */}
           <div className="w-full md:w-1/4 mb-10 md:mb-0 transform transition-transform duration-500 hover:translate-y-1 md:px-10">
-          <div className='bg-white/50 backdrop-blur-3xl rounded-2xl p-2'>
+          <div className='bg-white/50 w-[70%] backdrop-blur-3xl rounded-2xl p-2'>
           <img src={logo} alt="" />
           </div>
             <p className="text-gray-300 my-6">Crafting exceptional experiences that blend sophistication with innovation.</p>
